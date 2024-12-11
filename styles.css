@@ -26,6 +26,12 @@ body {
     padding: 2rem;
 }
 
+.logo {
+    max-width: 90px;
+}
+.logo:hover {
+    cursor: pointer;
+}
 .hero {
     background-color: var(--primary-color);
     color: white;
@@ -246,4 +252,161 @@ body {
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
+}
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f4f6f7;
+    --text-color: #333;
+    --accent-color: #2ecc71;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlight i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.cta-button.primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.testimonial-author {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-author .author-detail {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-links i {
+    font-size: 2rem; /* Adjust size as needed */
+    color: green;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar, .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-highlights, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
 }

@@ -3,42 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>קורס פיתוח אתרים ושילוב טכנולוגיות AI</title>
-    <link rel="stylesheet" href="styles.css">      
+    <title>קורס פיתוח אתרים ושילוב טכנולוגיות AI - לוגיקוד</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header class="hero">
-            <h1>קורס פיתוח אתרים ושילוב טכנולוגיות AI</h1>
-            <p>מסע מעשי בעולם פיתוח Web ו-AI
-                ב 12 מפגשים מרוכזים</p>
-                <br/>
-                <p class="ai-revolution">
-                    בעקבות מהפכת הבינה המלאכותית, הדרישה לשליטה מעמיקה בכל רזי התכנות הולכת ונעלמת. 
-                    בקורס זה, תלמדו כיצד להשתמש בבינה המלאכותית ליצירת קוד עבורכם, ותתמקדו בהרכבת הפאזל – 
-                    שילוב נכון של חלקי הקוד כדי ליצור פתרונות פרקטיים ויעילים.
-                </p>
-                <br/>
+        <nav class="navbar">
+            <!-- <div class="logo">לוגיקוד</div> -->
+            <img onclick="window.open('https://logicode.study', '_blank')" class="logo" src="https://logicode.study/wp-content/uploads/2020/02/Logicode_NoSlogan.svg" alt="">
+            <ul class="nav-links">
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#syllabus">תוכנית לימודים</a></li>
+                <li><a href="#testimonials">המלצות</a></li>
+            </ul>
+            <button onclick="openModal()" class="cta-button">הירשם עכשיו</button>
+        </nav>
 
-            <button onclick="openModal()" class="cta-button">להרשמה</button>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>קורס פיתוח אתרים ו-AI מתקדם</h1>
+                <p class="subtitle">מסע מעשי בעולם פיתוח Web ו-AI ב-12 מפגשים מרוכזים</p>
+                
+                <div class="hero-highlights">
+                    <div class="highlight">
+                        <i class="bi bi-card-checklist"></i>
+                        <span>12 מפגשים מעשיים</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="bi bi-award"></i>
+                        <span>תעודת גמר מקצועית</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="bi bi-cpu"></i>
+                        <span>שילוב טכנולוגיות AI</span>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <button onclick="openModal()" class="cta-button primary">הירשם עכשיו</button>                    
+                </div>
+            </div>
         </header>
-        
-        <section class="instructor-section">
+
+        <section id="about" class="instructor-section">
             <div class="instructor-profile">
                 <div class="instructor-image">
                     <img src="tutor-image.png" alt="אורי ברוק" />
                 </div>
-                <div class="instructor-bio">
+                <div class="instructor-details">
                     <h2>אודות המרצה: אורי ברוק</h2>
-                    <p>מתכנת ומורה מנוסה, בעלים של בית הספר הדיגיטלי לוגיקוד. בעל שלושה תארים אקדמיים עם ניסיון עשיר בתעשייה, בסטארטאפים ובהוראה באקדמיה ובג'ון ברייס.</p>
-                    <ul class="instructor-highlights">
-                        <li>✓ מומחה בפיתוח תוכנה</li>
-                        <li>✓ מרצה מוסמך בתחום ההייטק</li>
-                        <li>✓ בעל ניסיון מעשי של יותר מ-10 שנים</li>
-                    </ul>
+                    <p>מתכנת ומורה מנוסה, בעל שלושה תארים אקדמיים עם ניסיון עשיר בתעשייה, בסטארטאפים ובהוראה.</p>
+                    
+                    <div class="instructor-achievements">
+                        <div class="achievement">
+                            <i class="bi bi-code-slash"></i>
+                            <span>מומחה בפיתוח תוכנה</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="bi bi-person-video3"></i>
+                            <span>מרצה מוסמך בהייטק</span>
+                        </div>
+                        <div class="achievement">
+                            <i class="bi bi-calendar-check"></i>
+                            <span>יותר מ-10 שנות ניסיון</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2>מה אומרים הסטודנטים שלנו</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"אורי תותח, מרצה בעל ניסיון רב!"</p>
+                    <div class="testimonial-author">
+                        <span>יהודה</span>
+                        <span class="author-detail">סטודנט בקורס</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"הקורס מוסבר בצורה מובנת וברורה ברמה גבוהה מאוד. פשוט כיף ללמוד!"</p>
+                    <div class="testimonial-author">
+                        <span>רחל</span>
+                        <span class="author-detail">סטודנטית בקורס</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"למדתי בהתלהבות ובהבנה עמוקה. יכולתך לפשט דברים מורכבים מעוררת התפעלות!"</p>
+                    <div class="testimonial-author">
+                        <span>אהוד</span>
+                        <span class="author-detail">בוגר הקורס</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
         <section class="instructor-section">
             <div class="instructor-profile">
@@ -62,7 +124,7 @@
             </div>
         </section>
 
-        <section class="course-details">
+        <section class="course-details" id="syllabus">
             <h2>פירוט תוכנית הלימודים</h2>
             
             <div class="syllabus">
@@ -180,11 +242,29 @@
             </div>
         </section>
         
+
         
         <div class="cta-section">
             <button onclick="openModal()" class="cta-button large-button">הירשם עכשיו</button>
         </div>
+        <br/>
     </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">לוגיקוד</div>
+            <div class="footer-contact">
+                <p>צור קשר (וואצאפ): 02-9999940</p>
+                
+                <p>office@logicode.study</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/logicode.study"><i class="bi bi-facebook"></i></a>
+                <a href="https://logicode.study/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://wa.me/message/J4UQEKNJZU2TD1"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://logicode.study/"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <div id="modal">
         <div class="modal-content">
