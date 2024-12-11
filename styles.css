@@ -302,6 +302,10 @@ body {
     transition: color 0.3s;
 }
 
+.achievement .bi {
+    margin: 20px;
+}
+
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
@@ -310,8 +314,7 @@ body {
     margin-bottom: 3rem;
     text-align: center;
 }
-
-.hero-highlights {
+.hero-highlights {    
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -408,5 +411,53 @@ footer {
 
     .hero-highlights, .testimonial-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .logo {
+        max-width: 70px; /* Slightly smaller on mobile */
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem; /* Reduce padding */
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+    
+    .hero-highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%; /* Full width on mobile */
+        max-width: 300px;
     }
 }
