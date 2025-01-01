@@ -467,7 +467,7 @@ footer {
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: right;
 }
 
 .promotion-content h2 {
@@ -476,10 +476,45 @@ footer {
     font-size: 2rem;
 }
 
+.promotion-content h3 {
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
 .promotion-content p {
     font-size: 1.1rem;
     color: var(--text-color);
     line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.promotion-content ul {
+    list-style-type: none;
+    padding-right: 1rem;
+}
+
+.promotion-content ul li {
+    margin-bottom: 0.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+}
+
+.promotion-content ul li:before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.cta-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.large-button {
+    font-size: 1.2rem;
+    padding: 15px 40px;
 }
